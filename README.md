@@ -4,6 +4,8 @@ This is my take, a Python implementation, of the Wii U title-key generating algo
 </br>Title keys are a pbkdf2 hash with sha1 base. A md5 hash of a 'secret' with the title id, minus the prefixed 00 padding, appended to it is used as salt. <br />It needs to be hashed with 20 iterations to produce the correct title key.
 
 ## Usage:
+Get all the nessessary with the "Download ZIP" button in the Code section.
+
 This tool requires either the pycrypto or pycryptodome library. It is recommended to use pycryptodome since it is still maintained.
 </br>Use pip to install pycryptodome
 
